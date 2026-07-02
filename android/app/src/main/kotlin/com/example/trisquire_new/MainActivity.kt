@@ -1,4 +1,4 @@
-package com.example.trisquire_new
+package com.example.kgoc
 
 import io.flutter.embedding.android.FlutterActivity
 

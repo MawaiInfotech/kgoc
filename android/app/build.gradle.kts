@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.trisquire_new"
+    namespace = "com.example.kgoc"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = "28.2.13676358"
 
@@ -17,7 +17,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.trisquire_new"
+        applicationId = "com.example.kgoc"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
