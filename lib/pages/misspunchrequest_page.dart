@@ -178,8 +178,7 @@ class _RequestMisspunchPageState extends State<RequestMisspunchPage> {
 
     if (timeOfDay != null) {
       setState(() {
-        timeTextController.text =
-        "${timeOfDay.hour}:${timeOfDay.minute}";
+        timeTextController.text = "${timeOfDay.hour}:${timeOfDay.minute}";
       });
     }
   }

@@ -76,14 +76,16 @@ class _NavigationPageState extends State<NavigationPage> {
       child: Scaffold(
         backgroundColor: Colors.grey.shade200,
         appBar:  AppTopBar(title: "${user.emp_first_name} ${user.emp_last_name} - (${user.emp_cd})"),
-        bottomNavigationBar: CurvedNavigationBar(
-          height: 60.dw,
-          color: AppColors.bloodred,
-          backgroundColor: Colors.transparent,
-          buttonBackgroundColor: AppColors.navyblue,
-          items: Items,
-          index: pageIndex,
-          onTap: onTabTapped,
+        bottomNavigationBar: SafeArea(
+          child: CurvedNavigationBar(
+            height: 60.dw,
+            color: AppColors.bloodred,
+            backgroundColor: Colors.transparent,
+            buttonBackgroundColor: AppColors.navyblue,
+            items: Items,
+            index: pageIndex,
+            onTap: onTabTapped,
+          ),
         ),
         body: PageView(
           onPageChanged: onPageChanged,

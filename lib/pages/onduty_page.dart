@@ -148,7 +148,10 @@ class _MyOffDutyPageState extends State<MyOffDutyPage> {
     return Scaffold(
       key: scaffoldKey,
         backgroundColor: Colors.grey.shade100,
-        body: _buildBody());
+        bottomNavigationBar: _buildRequestOffdutyButton(),
+        body: _buildBody()
+    );
+
   }
 
   _buildBody() {
@@ -170,12 +173,7 @@ class _MyOffDutyPageState extends State<MyOffDutyPage> {
   }
 
   Widget _buildMyLeave(List<EmployeeoffdutyListModel> model) {
-    return Column(
-      children: [
-        Expanded(child: _buildRequestLeaveCard(model)),
-        _buildRequestOffdutyButton()
-      ],
-    );
+    return _buildRequestLeaveCard(model);
   }
 
   _buildRequestLeaveCard(List<EmployeeoffdutyListModel> offdutylist) {
@@ -262,7 +260,8 @@ class _MyOffDutyPageState extends State<MyOffDutyPage> {
 
   _buildRequestOffdutyButton() {
     return SafeArea(
-      child: Padding(
+      child: Container(
+        height: 60.dw,
         padding: const EdgeInsets.all(8.0),
         child: ElevatedButton(
             onPressed: () async {

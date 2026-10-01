@@ -12,7 +12,7 @@ class MisspunchService{
   
    final  body = {'emp_cd': employeeCode, 'unit_cd': unitCode};
 
-   const url = root + 'miss-punch-list';
+   const url = '${root}miss-punch-list';
    
     final response = await http.post(Uri.parse(url),
         body: json.encode(body), headers: getHeaders());
@@ -21,7 +21,7 @@ class MisspunchService{
       final itemList = responseBody['result'] as List;
       return itemList.map((e) => MisspunchModel.fromJson(e)).toList();
     }catch(e){
-      _handleError;
+      _handleError(e);
     }
     return [];
   }

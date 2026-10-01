@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           },
           child: Card(
             color:  const Color(0xffFFF2E5),
-            elevation: 10.dw,
+            elevation: 5.dw,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           },
           child: Card(
             color: const Color(0xffD9D9BF),
-            elevation: 10.dw,
+            elevation: 5.dw,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -138,6 +138,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           },
           child: Card(
             color: const Color(0xffE5ECFF),
+            elevation: 5.dw,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -174,6 +175,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           },
           child: Card(
             color: const Color(0xffFFECE5),
+            elevation: 5.dw,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -192,6 +194,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           },
           child: Card(
             color: const Color(0xffFFFBE5),
+            elevation: 5.dw,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
